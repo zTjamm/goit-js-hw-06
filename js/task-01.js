@@ -1,7 +1,5 @@
-const categories = [...(document.querySelectorAll("ul#categories>li.item>h2"))];
-
+const categories = document.querySelectorAll("h2");
 console.log(`Number of categories: ${categories.length}`);
-
 const items = document.querySelectorAll('.item');
 items.forEach( element => {
     const title = element.querySelector('h2').innerHTML;
