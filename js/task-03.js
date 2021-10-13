@@ -13,8 +13,8 @@ const images = [
   },
 ];
 const gallery = document.querySelector(".gallery");
-const markup = images.map((img) => `<li class="item"><img src="${img.url}" alt="${img.alt}"></li>`);
-markup.map(m=>gallery.insertAdjacentHTML("beforeend", m))
+const image = images.map((e) =>`<li class="item"><img src="${e.url}"></li>`).join("");
+gallery.insertAdjacentHTML("afterbegin", image)
 gallery.style.display = "flex";
 gallery.style.justifyContent = "space-between"
 gallery.style.flexWrap = "wrap";
